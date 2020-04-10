@@ -1,0 +1,96 @@
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+
+    /*      Theme colors        */
+    --text-gray: #3f4954;
+    --text-light : #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* gradient color   */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    /*      theme font-family   */
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Josefin : 'Josefin', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic : 'Livvic', cursive;
+
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222222;
+    font-family: 'Lucida Sans', 'Lucida Grande', sans-serif;
+}
+
+
+
+.container{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container .box{
+    position: relative;
+    background: #ffffff;
+    padding: 20px 40px 40px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.container .box:nth-child(1){
+    background: linear-gradient(45deg, #036eb7, #64eaff);
+}
+.container .box:nth-child(2){
+    background: linear-gradient(45deg, #E91E63, #ED55ff);
+}
+.container .box:nth-child(3){
+    background: linear-gradient(45deg, #086d35, #00ff72);
+}
+.container .box:nth-child(4){
+    background: linear-gradient(45deg, #f05a4f, #f4c030);
+}
+
+.container .box h2{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    color: #ffffff;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.container.box h3{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.container.box p{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
